@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
-
-const formStates = {
-    NENHUM: "NENHUM",
-    CLIENTE: "CLIENTE",
-    RESTAURANTE: "RESTAURANTE",
-};
+import PreForm from './PreForm.js';
+import { formStates } from "./../../utils/FormStates.js"; 
+import ButtonGroup from '../elements/ButtonGroup';
+import Button from '../elements/Button';
 
 const JoinUs = (
     className,
@@ -24,6 +22,12 @@ const JoinUs = (
         if (formStates !== selected) setFormSelecionado(selected);
     };
 
+    const onCancel = () => {
+        setFormSelecionado(formStates.NENHUM);
+    }
+
+    useEffect(() => {console.log("atualizou")}, [formSelecionado]);
+
     const outerClasses = classNames(
         'features-tiles section',
         hasBgColor && 'has-bg-color',
@@ -37,41 +41,61 @@ const JoinUs = (
     };
 
     const restaurantTitle = {
-        title: 'Restaurantes',
+        title: 'Restaurante',
     }
 
     const clientTitle = {
-        title: 'Clientes',
+        title: 'Cliente',
     }
 
     return (
         <section
             {...props}
-            className={outerClasses}
+            className={`${outerClasses} mb-72`}
         >
             <div className="container mt-72">
                 <div>
                     <SectionHeader data={sectionHeader} className="center-content" />
                 </div>
                 <div className="join-buttons">
-                    <div className="costumer-box join-hover" hidden={formSelecionado === formStates.RESTAURANTE} onClick={() => onChangeForm(formStates.CLIENTE)}>
+                    <div className={`costumer-box ${formSelecionado !== formStates.CLIENTE && "join-hover"}`} hidden={formSelecionado === formStates.RESTAURANTE} onClick={() => onChangeForm(formStates.CLIENTE)}>
                         <SectionHeader data={clientTitle} tag={'h3'} className="center-content" />
-                        <Image
-                            src={require('./../../assets/images/clientes.svg')}
-                            alt="Botão para pré-cadastro de clientes"
-                            width={300}
-                            height={300} />
+                        <div className="join-buttons">
+                            <Image
+                                src={require('./../../assets/images/clientes.svg')}
+                                alt="Botão para pré-cadastro de clientes"
+                                width={300}
+                                height={300} />
+                                
+                            {formSelecionado === formStates.CLIENTE && <PreForm cancel={() => onCancel()} submit={() => null} />}
+                        </div>
                     </div>
                     <div className="restaurant-box join-hover" hidden={formSelecionado === formStates.CLIENTE} onClick={() => onChangeForm(formStates.RESTAURANTE)}>
                         <SectionHeader data={restaurantTitle} tag={'h3'} className="center-content" />
-                        <Image
-                            src={require('./../../assets/images/restaurantes.svg')}
-                            alt="Botão para pré-cadastro de estabelecimentos"
-                            width={300}
-                            height={300} />
+                        <div className="join-buttons">
+                            <Image
+                                src={require('./../../assets/images/restaurantes.svg')}
+                                alt="Botão para pré-cadastro de estabelecimentos"
+                                width={300}
+                                height={300} />
+
+                            {formSelecionado === formStates.RESTAURANTE && <PreForm cancel={() => onCancel()} submit={() => null} />}
+                        </div>
                     </div>
                 </div>
             </div>
+            { formSelecionado !== formStates.NENHUM && 
+                <div className="button-group">
+                    <ButtonGroup>
+                        <Button tag="button" color="dark" wideMobile onClick={onCancel}>
+                            Voltar
+                        </Button>
+                        <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
+                            Confirmar
+                        </Button>
+                    </ButtonGroup>
+                </div>
+            }
         </section>
     );
 
