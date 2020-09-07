@@ -5,7 +5,7 @@ import Footer from '../components/layout/Footer';
 const LayoutDefault = ({ children }) => (
   <>
     <Header navPosition="right" className="reveal-from-bottom" />
-    <main className="site-content">
+    <main className="site-content illustration-section-02">
       {children}
     </main>
     <Footer />

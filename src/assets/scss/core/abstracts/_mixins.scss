@@ -184,14 +184,12 @@
 	background-image: url(../../../images/#{$file});
 	background-repeat: no-repeat;
 	@if( unit( $height ) == '%' ) {
-		background-size: contain;
+		background-size: cover;
 	} @else {
 		background-size: auto;
 	}
 	@if ( $hoffset ) {
 		left: calc(50% + #{$hoffset});
-	} @else {
-		left: 50%;
 	}
 	@if ( $vpos == 'top' ) {
 		@if ( $voffset ) {
@@ -210,12 +208,7 @@
 		background-position: center bottom;
 		transform: translate(-50%);
 	} @else {
-		background-position: center;
-		@if ( $voffset ) {
-			top: calc(50% + #{$voffset});
-		} @else {
-			top: 50%;
-		}
-		transform: translate(-50%, -50%);
+		top: 0;
+		left: 0;
 	}
 }
