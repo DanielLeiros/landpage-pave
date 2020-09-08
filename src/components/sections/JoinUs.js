@@ -52,6 +52,7 @@ const JoinUs = (
         <section
             {...props}
             className={`${outerClasses} mb-72`}
+            id="join-us"
         >
             <div className="container mt-72">
                 <div>
@@ -60,7 +61,7 @@ const JoinUs = (
                 <div className="join-buttons">
                     <div className={`costumer-box ${formSelecionado !== formStates.CLIENTE && "join-hover"}`} hidden={formSelecionado === formStates.RESTAURANTE} onClick={() => onChangeForm(formStates.CLIENTE)}>
                         <SectionHeader data={clientTitle} tag={'h3'} className="center-content" />
-                        <div className="join-buttons">
+                        <div className="join-button-form">
                             <Image
                                 src={require('./../../assets/images/clientes.svg')}
                                 alt="Botão para pré-cadastro de clientes"
@@ -72,7 +73,7 @@ const JoinUs = (
                     </div>
                     <div className={`restaurant-box ${formSelecionado !== formStates.RESTAURANTE && "join-hover"}`} hidden={formSelecionado === formStates.CLIENTE} onClick={() => onChangeForm(formStates.RESTAURANTE)}>
                         <SectionHeader data={restaurantTitle} tag={'h3'} className="center-content" />
-                        <div className="join-buttons">
+                        <div className="join-button-form">
                             <Image
                                 src={require('./../../assets/images/restaurantes.svg')}
                                 alt="Botão para pré-cadastro de estabelecimentos"

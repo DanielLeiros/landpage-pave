@@ -6,6 +6,21 @@
     justify-items: center;
 }
 
+.join-button-form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+@include media( '<=700px' ) {
+    .join-button-form {
+        flex-direction: column;
+    }
+}
+
 .costumer-box {
     padding: 5%;
     border-right: 1px solid color(heading);

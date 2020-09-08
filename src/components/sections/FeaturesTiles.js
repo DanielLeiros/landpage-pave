@@ -64,6 +64,7 @@ const FeaturesTiles = ({
     <section
       {...props}
       className={outerClasses}
+      id="feature-tiles"
     >
       <div className="container mt-72">
         <div className={innerClasses}>
