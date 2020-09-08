@@ -67,10 +67,10 @@ const JoinUs = (
                                 width={300}
                                 height={300} />
                                 
-                            {formSelecionado === formStates.CLIENTE && <PreForm cancel={() => onCancel()} submit={() => null} />}
+                            {formSelecionado === formStates.CLIENTE && <PreForm formCategory={formStates.CLIENTE} />}
                         </div>
                     </div>
-                    <div className="restaurant-box join-hover" hidden={formSelecionado === formStates.CLIENTE} onClick={() => onChangeForm(formStates.RESTAURANTE)}>
+                    <div className={`restaurant-box ${formSelecionado !== formStates.RESTAURANTE && "join-hover"}`} hidden={formSelecionado === formStates.CLIENTE} onClick={() => onChangeForm(formStates.RESTAURANTE)}>
                         <SectionHeader data={restaurantTitle} tag={'h3'} className="center-content" />
                         <div className="join-buttons">
                             <Image
@@ -79,13 +79,13 @@ const JoinUs = (
                                 width={300}
                                 height={300} />
 
-                            {formSelecionado === formStates.RESTAURANTE && <PreForm cancel={() => onCancel()} submit={() => null} />}
+                            {formSelecionado === formStates.RESTAURANTE && <PreForm formCategory={formStates.RESTAURANTE} />}
                         </div>
                     </div>
                 </div>
             </div>
             { formSelecionado !== formStates.NENHUM && 
-                <div className="button-group">
+                <div className="join-us-buttons">
                     <ButtonGroup>
                         <Button tag="button" color="dark" wideMobile onClick={onCancel}>
                             Voltar

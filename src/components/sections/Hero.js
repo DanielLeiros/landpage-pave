@@ -52,7 +52,7 @@ const Hero = ({
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom w-text" data-reveal-delay="400">
-                Pratos, preços e promoções em qualquer lugar na palma da mão.
+                Pratos, preços e promoções de qualquer lugar, em qualquer lugar.
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>

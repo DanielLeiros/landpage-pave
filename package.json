@@ -11,7 +11,8 @@
     "react-ga": "^2.7.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.3",
-    "react-select": "^3.1.0"
+    "react-select": "^3.1.0",
+    "serve": "^11.3.2"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -36,6 +37,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
