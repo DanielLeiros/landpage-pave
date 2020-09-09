@@ -60,7 +60,7 @@ const Hero = ({
                     Saber mais
                     </Button>
                   <Button tag="a" color="dark" wideMobile href="#join-us">
-                    Usar App
+                    Junte-se ao pavê
                     </Button>
                 </ButtonGroup>
               </div>

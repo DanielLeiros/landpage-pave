@@ -37,7 +37,7 @@ const JoinUs = (
 
     const sectionHeader = {
         title: 'Junte-se ao pavê',
-        paragraph: 'Seja um dos primeiros a usar o nosso app. Escolha o perfil que te caracteriza e seja muito bem-vindo!'
+        paragraph: 'Faça seu pré-cadastro e receba prêmios especiais. Escolha o perfil que mais te caracteriza e seja muito bem-vindo a essa experiência!'
     };
 
     const restaurantTitle = {

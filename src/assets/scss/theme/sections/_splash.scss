@@ -1,0 +1,39 @@
+.brand-animation {
+    animation-name: brand;
+    animation-duration: 2s;
+    -webkit-animation:brand 2s linear infinite;
+    -moz-animation:brand 2s linear infinite;
+    animation:brand 2s linear infinite;
+}
+
+@-moz-keyframes brand { 50% { -moz-transform: rotate(90deg); } }
+@-webkit-keyframes brand { 50% { -webkit-transform: rotate(90deg); } }
+@keyframes brand { 
+    50% { 
+            transform:rotate(90deg); 
+            transform:rotate(180deg); 
+            transform:rotate(270deg); 
+            transform:rotate(360deg); 
+        } 
+    }
+
+// @keyframes brand {
+//   0%   {transform: rotate(0deg); width: 300px;}
+//   20%  {transform: rotate(90deg); width: 100px;}
+//   40%  {transform: rotate(180deg); width: 200px;}
+//   60%  {transform: rotate(270deg); width: 300px;}
+//   80%  {transform: rotate(300deg); width: 150px;}
+//   100% {transform: rotate(360deg); width: 0px;}
+// }
+.splash-centered {
+    width: 100%;
+    height: 780px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-splash {
+    background-image: url(../../../images/splash-bg.png);
+    background-repeat: repeat;
+}
