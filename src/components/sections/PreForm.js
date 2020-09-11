@@ -8,7 +8,7 @@ const PreForm = ({formCategory}) => {
     return (
         <div className="form-container">
             <div>
-                <label>Nome{formCategory === formStates.RESTAURANTE && " do restaurante"}<span className="required">*</span></label>
+                <label>Nome{formCategory === formStates.RESTAURANTE && " do estabelecimento"}<span className="required">*</span></label>
                 <input className="input-field text-15" placeholder="Nome" type="text" onChange={(e)=> console.log(e)} />
             </div>
             <div>

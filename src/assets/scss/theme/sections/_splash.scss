@@ -10,12 +10,12 @@
 @-webkit-keyframes brand { 50% { -webkit-transform: rotate(90deg); } }
 @keyframes brand { 
     50% { 
-            transform:rotate(90deg); 
-            transform:rotate(180deg); 
-            transform:rotate(270deg); 
-            transform:rotate(360deg); 
-        } 
-    }
+        opacity: .8; 
+        opacity: .6; 
+        opacity: .4; 
+        opacity: .2; 
+    } 
+}
 
 // @keyframes brand {
 //   0%   {transform: rotate(0deg); width: 300px;}

@@ -37,11 +37,11 @@ const JoinUs = (
 
     const sectionHeader = {
         title: 'Junte-se ao pavê',
-        paragraph: 'Faça seu pré-cadastro e receba prêmios especiais. Escolha o perfil que mais te caracteriza e seja muito bem-vindo a essa experiência!'
+        paragraph: 'Faça seu pré-cadastro e comece com um prêmio especial. Escolha o perfil que mais te caracteriza e seja muito bem-vindo a essa experiência!'
     };
 
     const restaurantTitle = {
-        title: 'Restaurante',
+        title: 'Estabelecimento',
     }
 
     const clientTitle = {

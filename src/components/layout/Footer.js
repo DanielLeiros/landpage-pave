@@ -41,7 +41,8 @@ const Footer = ({
             <Logo sizeH={100} sizeW={100} />
           </div>
           <div className="footer-bottom space-between text-xxs invert-order-desktop">
-            <div className="footer-copyright">Todos os direitos reservados ao App Pavê</div>
+          <div className="footer-copyright">© 2020 Pavê</div>
+          <div className="footer-copyright">Todos os direitos reservados.</div>
           </div>
         </div>
       </div>

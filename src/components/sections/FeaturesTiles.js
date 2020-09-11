@@ -45,7 +45,7 @@ const FeaturesTiles = ({
 
   const sectionHeader = {
     title: 'É pavê, comer e amar',
-    paragraph: 'Sabemos o quão difícil tem sido o período de isolamento social, mas nosso sonho é fazer com que as pessoas voltem a curtir e festejar presencialmente. Para auxiliar nesse processo, seja usuário ou estabelecimento, use o pavê e aproveite:  '
+    paragraph: 'Sabemos o quão difícil tem sido o período de isolamento social, mas nosso sonho é fazer com que as pessoas voltem a curtir e festejar presencialmente. Para auxiliar nesse processo, seja você usuário ou estabelecimento, use o pavê e aproveite:  '
   };
 
   const descriptions = {

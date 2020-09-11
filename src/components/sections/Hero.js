@@ -52,14 +52,14 @@ const Hero = ({
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom w-text" data-reveal-delay="400">
-                Pratos, preços e promoções de qualquer lugar, em qualquer lugar.
+                Pratos, preços e promoções dos lugares que você mais quer ir.  <br/> E dos que nem sabia que queria tanto.
                 </p>
-              <div className="reveal-from-bottom" data-reveal-delay="600">
+              <div >
                 <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="#feature-tiles">
+                  <Button tag="a" color="dark" wideMobile href="#feature-tiles">
                     Saber mais
                     </Button>
-                  <Button tag="a" color="dark" wideMobile href="#join-us">
+                  <Button tag="a" color="primary" wideMobile href="#join-us">
                     Junte-se ao pavê
                     </Button>
                 </ButtonGroup>
