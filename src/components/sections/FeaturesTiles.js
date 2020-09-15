@@ -49,15 +49,15 @@ const FeaturesTiles = ({
   };
 
   const descriptions = {
-    list: 'Versão totalmente digital do cardápio, de rápido acesso pelo cliente e manutenção rápida pelo estabelecimento.',
-    coin: 'Permite que os clientes consultem os preços e escolham destino e prato que cabem no estômago. Ou melhor, bolso!',
-    tree: 'A melhor publicidade é um bom atendimento e bucho cheio. Compartilhamento rápido e fácil entre clientes.',
-    ticket: 'Promoções exclusivas fazem o movimento no salão aumentar, só confia!',
-    clock: 'Sem espera de cardápio e com pedidos já idealizados o tempo diminui e a satisfação do cliente aumenta.',
-    rocket: 'Quanto melhor avaliado, melhor sua posição em nossos rankings, consequentemente  maior a visibilidade. A meta é o topo!',
-    bubbles: 'Os feedbacks são imprescindíveis para a evolução e consolidação do negócio. Alinhe seu produto às expectativas.',
+    list: 'Versão totalmente digital do cardápio, com todos os preços e pratos. Sempre atualizado!',
+    tree: 'A melhor publicidade é quando pessoas falam que é bom ir ao seu restaurante. Compartilhamento rápido e fácil entre clientes do app.',
+    ticket: 'Todos ficarão sabendo das suas promoções, pode confiar!',
+    clock: 'Sem espera de cardápio e com pedidos já idealizados, o tempo diminui e a satisfação do cliente aumenta.',
+    rocket: 'Quanto mais curtido e favoritado, melhor sua posição nos nossos rankings. Melhor da sua categoria, bairro, cidade e até do mundo. A meta é o topo!',
+    bubbles: 'Receba feedbacks a partir do nosso sitema, eles são imprescindíveis para a evolução e consolidação do negócio. Alinhe seu produto às expectativas.',
     leaf: 'Diminuir a produção de cardápios impressos além de economizar ainda ajuda o planeta!',
-
+    safe: 'Mantenha seus clientes mais seguros, sem necessidade de circulação de cardápios.',
+    luck: 'Participe de sorteios mensais, receba prêmios exclusivos e viva experiências maravilhosas! ',
   }
 
   return (
@@ -98,28 +98,6 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/coin-dollar.svg')}
-                      alt={descriptions.coin}
-                      width={64}
-                      height={64} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Consulta de preços
-                    </h4>
-                  <p className="m-0 text-sm">
-                      {descriptions.coin}
-                    </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
                       src={require('./../../assets/images/tree.svg')}
                       alt={descriptions.tree}
                       width={64}
@@ -137,7 +115,7 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="600">
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -159,7 +137,7 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom">
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="600">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -181,7 +159,7 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
+            <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -203,7 +181,51 @@ const FeaturesTiles = ({
               </div>
             </div>
 
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="features-tiles-item-image mb-16">
+                    <Image
+                      src={require('./../../assets/images/aid-kit.svg')}
+                      alt={descriptions.safe}
+                      width={64}
+                      height={64} />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">
+                    Seguro
+                    </h4>
+                  <p className="m-0 text-sm">
+                      {descriptions.safe}
+                    </p>
+                </div>
+              </div>
+            </div>
+
             <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="features-tiles-item-image mb-16">
+                    <Image
+                      src={require('./../../assets/images/leaf.svg')}
+                      alt={descriptions.leaf}
+                      width={64}
+                      height={64} />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">
+                    Sustentável
+                    </h4>
+                  <p className="m-0 text-sm">
+                      {descriptions.leaf}
+                    </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="600">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -225,23 +247,23 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="600">
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="800">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/leaf.svg')}
-                      alt={descriptions.leaf}
+                      src={require('./../../assets/images/coin-dollar.svg')}
+                      alt={descriptions.luck}
                       width={64}
                       height={64} />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Sustentável
+                    Prêmios mensais
                     </h4>
                   <p className="m-0 text-sm">
-                      {descriptions.leaf}
+                    {descriptions.luck}
                     </p>
                 </div>
               </div>
