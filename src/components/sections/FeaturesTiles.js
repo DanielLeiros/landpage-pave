@@ -50,14 +50,13 @@ const FeaturesTiles = ({
 
   const descriptions = {
     list: 'Versão totalmente digital do cardápio, com todos os preços e pratos. Sempre atualizado!',
-    tree: 'A melhor publicidade é quando pessoas falam que é bom ir ao seu restaurante. Compartilhamento rápido e fácil entre clientes do app.',
+    tree: 'A melhor publicidade é quando as pessoas falam quão bom é ir ao seu estabelecimento. Compartilhamento rápido e fácil entre clientes do app.',
     ticket: 'Todos ficarão sabendo das suas promoções, pode confiar!',
     clock: 'Sem espera de cardápio e com pedidos já idealizados, o tempo diminui e a satisfação do cliente aumenta.',
-    rocket: 'Quanto mais curtido e favoritado, melhor sua posição nos nossos rankings. Melhor da sua categoria, bairro, cidade e até do mundo. A meta é o topo!',
-    bubbles: 'Receba feedbacks a partir do nosso sitema, eles são imprescindíveis para a evolução e consolidação do negócio. Alinhe seu produto às expectativas.',
-    leaf: 'Diminuir a produção de cardápios impressos além de economizar ainda ajuda o planeta!',
-    safe: 'Mantenha seus clientes mais seguros, sem necessidade de circulação de cardápios.',
-    luck: 'Participe de sorteios mensais, receba prêmios exclusivos e viva experiências maravilhosas! ',
+    rocket: 'Quanto mais curtido e favoritado, melhor sua posição nos nossos rankings e maior sua visibilidade. Da sua categoria, bairro e da cidade toda, a meta é o topo!',
+    bubbles: 'Receba feedbacks a partir do nosso sistema, eles serão imprescindíveis para a evolução e consolidação do seu negócio. Alinhe seu produto às expectativas.',
+    leaf: 'Diminua a produção e circulação de cardápios impressos em seu estabelecimento. Além de segurança aos clientes, ainda ajuda o planeta!',
+    location: 'Seja facilmente encontrado por qualquer usuário do aplicativo através no nosso radar.',
   }
 
   return (
@@ -88,6 +87,28 @@ const FeaturesTiles = ({
                     </h4>
                   <p className="m-0 text-sm">
                     {descriptions.list}
+                    </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom">
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="features-tiles-item-image mb-16">
+                    <Image
+                      src={require('./../../assets/images/location.svg')}
+                      alt={descriptions.location}
+                      width={64}
+                      height={64} />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">
+                    Apareça
+                    </h4>
+                  <p className="m-0 text-sm">
+                    {descriptions.location}
                     </p>
                 </div>
               </div>
@@ -159,51 +180,7 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/rocket.svg')}
-                      alt={descriptions.rocket}
-                      width={64}
-                      height={64} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Rankeamento
-                    </h4>
-                  <p className="m-0 text-sm">
-                    {descriptions.rocket}
-                    </p>
-                </div>
-              </div>
-            </div>
-
             <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/aid-kit.svg')}
-                      alt={descriptions.safe}
-                      width={64}
-                      height={64} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Seguro
-                    </h4>
-                  <p className="m-0 text-sm">
-                      {descriptions.safe}
-                    </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -216,7 +193,7 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Sustentável
+                    Sustentável e Seguro
                     </h4>
                   <p className="m-0 text-sm">
                       {descriptions.leaf}
@@ -225,7 +202,7 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="600">
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -247,23 +224,23 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="800">
+            <div className="tiles-item reveal-from-bottom"  data-reveal-delay="600">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/coin-dollar.svg')}
-                      alt={descriptions.luck}
+                      src={require('./../../assets/images/rocket.svg')}
+                      alt={descriptions.rocket}
                       width={64}
                       height={64} />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Prêmios mensais
+                    Rankeamento
                     </h4>
                   <p className="m-0 text-sm">
-                    {descriptions.luck}
+                    {descriptions.rocket}
                     </p>
                 </div>
               </div>

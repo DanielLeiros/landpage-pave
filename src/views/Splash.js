@@ -5,7 +5,7 @@ const Splash = () => {
 
     return (
         <div className="animation-logo splash-centered background-splash">
-            <Logo className="brand-animation" />
+            <Logo className="brand-animation" sizeH={250} sizeW={250} />
         </div>
     );
 }
