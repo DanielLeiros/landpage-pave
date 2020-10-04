@@ -17,6 +17,7 @@ const JoinUs = (
 ) => {
 
     const [formSelecionado, setFormSelecionado] = useState(formStates.NENHUM);
+    const [data, getData] = useState({});
 
     const onChangeForm = (selected) => {
         if (formStates !== selected) setFormSelecionado(selected);
@@ -26,7 +27,9 @@ const JoinUs = (
         setFormSelecionado(formStates.NENHUM);
     }
 
-    useEffect(() => {console.log("atualizou")}, [formSelecionado]);
+    const onConfirm = () => {
+        console.log(data)
+    }
 
     const outerClasses = classNames(
         'features-tiles section',
@@ -68,7 +71,7 @@ const JoinUs = (
                                 width={300}
                                 height={300} />
                                 
-                            {formSelecionado === formStates.CLIENTE && <PreForm formCategory={formStates.CLIENTE} />}
+                            {formSelecionado === formStates.CLIENTE && <PreForm formCategory={formStates.CLIENTE} getData={getData} />}
                         </div>
                     </div>
                     <div className={`restaurant-box ${formSelecionado !== formStates.RESTAURANTE && "join-hover"}`} hidden={formSelecionado === formStates.CLIENTE} onClick={() => onChangeForm(formStates.RESTAURANTE)}>
@@ -80,7 +83,7 @@ const JoinUs = (
                                 width={300}
                                 height={300} />
 
-                            {formSelecionado === formStates.RESTAURANTE && <PreForm formCategory={formStates.RESTAURANTE} />}
+                            {formSelecionado === formStates.RESTAURANTE && <PreForm formCategory={formStates.RESTAURANTE} getData={getData} />}
                         </div>
                     </div>
                 </div>
@@ -91,7 +94,7 @@ const JoinUs = (
                         <Button tag="button" color="dark" wideMobile onClick={onCancel}>
                             Voltar
                         </Button>
-                        <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
+                        <Button tag="a" color="primary" wideMobile onClick={() => onConfirm()}>
                             Confirmar
                         </Button>
                     </ButtonGroup>
