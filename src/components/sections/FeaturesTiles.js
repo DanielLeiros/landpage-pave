@@ -50,14 +50,14 @@ const FeaturesTiles = ({
   };
 
   const descriptions = {
-    list: 'Versão totalmente digital do cardápio, com todos os preços e pratos. Sempre atualizado!',
-    tree: 'A melhor publicidade é quando as pessoas falam quão bom é ir ao seu estabelecimento. Compartilhamento rápido e fácil entre clientes do app.',
+    list: 'Versão totalmente digital do cardápio, com todos os preços, pratos e visto diariamente em toda a cidade!',
+    tree: 'A melhor publicidade é quando as pessoas falam o quão bom é ir ao seu estabelecimento. Compartilhamento rápido e fácil entre clientes do app.',
     ticket: 'Todos ficarão sabendo das suas promoções, pode confiar!',
     clock: 'Sem espera de cardápio e com pedidos já idealizados, o tempo diminui e a satisfação do cliente aumenta.',
     rocket: 'Quanto mais curtido e favoritado, melhor sua posição nos nossos rankings e maior sua visibilidade. Da sua categoria, bairro e da cidade toda, a meta é o topo!',
     bubbles: 'Receba feedbacks a partir do nosso sistema, eles serão imprescindíveis para a evolução e consolidação do seu negócio. Alinhe seu produto às expectativas.',
     leaf: 'Diminua a produção e circulação de cardápios impressos em seu estabelecimento. Além de segurança aos clientes, ainda ajuda o planeta!',
-    location: 'Seja facilmente encontrado por qualquer usuário do aplicativo através no nosso radar.',
+    location: 'Seja facilmente encontrado e descoberto por qualquer usuário do aplicativo através do nosso radar.',
   }
 
   return (

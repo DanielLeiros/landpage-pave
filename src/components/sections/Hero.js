@@ -56,7 +56,7 @@ const Hero = ({
                 </p>
               <div >
                 <ButtonGroup>
-                  <Button tag="a" color="dark" wideMobile href="#feature-tiles">
+                  <Button tag="a" color="dark" wideMobile href="#feature-split">
                     Saber mais
                     </Button>
                   <Button tag="a" color="primary" wideMobile href="#join-us">

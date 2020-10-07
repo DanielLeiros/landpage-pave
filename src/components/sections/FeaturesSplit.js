@@ -51,13 +51,13 @@ const FeaturesSplit = ({
 
   const sectionHeader = {
     title: 'O que é o pavê',
-    paragraph: 'O pavê é um aplicativo que através das suas telas, lhe dará acesso facilmente ao cardápio do estabelecimento que estiver querendo ver naquele momento. Até de um carrinho de cachorro quente perto de você, se quiser'
   };
 
   return (
     <section
       {...props}
       className={outerClasses}
+      id="feature-split"
     >
       <div className="container">
         <div className={innerClasses}>
@@ -66,15 +66,9 @@ const FeaturesSplit = ({
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
-              <div className="text-xxs text-color-secondary fw-600 tt-u mb-8">
-                  Pra quem gosta de viver boas experiências gastronômicas
-                  </div>
-                <h3 className="mt-0 mb-12">
-                  Salve tempo e dinheiro
-                  </h3>
-                <p className="m-0">
-                Cansado de ficar caçando os preços e pratos dos restaurantes em sites ou redes sociais de cada um? 
-                  </p>
+                <h5 className="mt-16 ml-32">
+                  Cansado de ficar caçando os preços e pratos dos restaurantes em sites ou redes sociais de cada um?
+                  </h5>
               </div>
               <div className={
                 classNames(
@@ -93,13 +87,13 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-secondary fw-600 tt-u mb-8">
-                  Pra quem quer alavancar seu negócio e facilitar a vida para seus clientes
+                  Pra quem gosta de viver boas experiências gastronômicas
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Ganhe visibilidade e praticidade para seu negócio
+                  Salve tempo e dinheiro
                   </h3>
                 <p className="m-0">
-                Torne seu cardápio digital, sendo mais atrativo e acessível pelos seus clientes. Faça com que suas promoções se espalhem. Ganhe espaço e visibilidade através dos nossos rankings. 
+                  O pavê é um aplicativo que através das suas telas, lhe dará acesso facilmente ao cardápio do estabelecimento que estiver querendo ver naquele momento. Isso e muito mais, da forma mais simples e de graça!
                   </p>
               </div>
               <div className={
